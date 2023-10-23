@@ -25,6 +25,8 @@ services:
   mariadb:
     image: mariadb:latest
     restart: always
+    ports:
+      - 3307:3306
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: vendas
